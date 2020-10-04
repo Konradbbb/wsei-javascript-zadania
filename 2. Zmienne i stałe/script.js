@@ -18,3 +18,10 @@ let b = 32;
 let sum = 0;
 sum = a + b
 console.log(sum);
+
+
+//Zadanie 3:
+let variable;
+console.log(variable);
+
+//błąd wynika z braku definicji (undefined)
