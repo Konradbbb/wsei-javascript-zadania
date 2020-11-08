@@ -164,3 +164,15 @@ function sumOfArraysIndex(arrayA, arrayB){
 }
 
 console.log(sumOfArraysIndex(exampleArrayA, exampleArrayB));
+
+
+//Zadanie 9
+function getArrayWithOppositeSigns(numbers) {
+    const result = [];
+    for(let number of numbers) {
+        result.push(-number);
+    }
+    return result;
+}
+
+console.log(getArrayWithOppositeSigns([1,-2,3]));
