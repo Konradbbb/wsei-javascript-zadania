@@ -151,3 +151,16 @@ func([2,4,6,5, 22, 42]);
 
 
 //Zadanie 8
+
+let exampleArrayA = [7, 6, 3, 4];
+let exampleArrayB = [5, 6, 2, 8];
+
+function sumOfArraysIndex(arrayA, arrayB){
+    let array = [];
+    arrayA.forEach((num, i) =>{
+        array.push(num + arrayB[i]);
+    });
+    return array;
+}
+
+console.log(sumOfArraysIndex(exampleArrayA, exampleArrayB));
