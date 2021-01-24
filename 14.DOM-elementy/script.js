@@ -18,20 +18,17 @@ console.log(listOfDivs(divs));
 
 //Zadanie 2 
 
-function task2(param){
-    //1
-    console.log(param.innerHTML);
-    //2
-    console.log(param.outerHTML);
-    //3
-    console.log(param.className);
-    //4
-    console.log([...param.classList]);
-    //5
-    console.log(param.dataset);
+var shortList = document.getElementsByClassName("short-list")[0];
+
+function showData(shortList) {
+    console.log(shortList.innerHTML);
+    console.log(shortList.outerHTML);
+    console.log(shortList.className);
+    console.log(shortList.classList);
+    console.log(shortList.dataset);
 }
 
-task2(document.querySelector(".short-list"))
+showData(shortList);
 
 
 
@@ -52,13 +49,13 @@ console.log(thirdTask(numbersDataset));
 
 //Zadanie 4
 
-document.getElementById("spanText").innerText =  "dowolny";
+document.getElementById("spanText").innerText =  "some text";
 
  
 
 //Zadanie 5
 
-document.getElementById("spanText").className =  "newClassName";
+document.getElementById("spanText").className =  "some class";
 
  
 
