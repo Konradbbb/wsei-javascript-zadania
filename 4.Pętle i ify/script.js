@@ -80,20 +80,84 @@ for (let variable = 0; varaiable < 100; varaiable++) {
   }
   
   
-  //Zadanie 8:
-  
- //a 
- 
-  const star = '*'
-  for (let i = 0; i < 5; i++) {
-    let result = '';
-    for (let j = 0; j < i; j++) {
-        result += star;
+ // Zadanie 8:
+	
+// a)
+let stars = '*';
+let spacer = ' ';
+for (var a = 0; a < 5; a++) {
+    var result = '';
+    for (var b = 0; b <= a; b++) {
+        result += stars;
     }
-    console.log(result)
-  }
+    console.log(result);
+}
 
-//b
+// b)
+let stars = '*';
+let spacer = ' ';
+for (var c = 0; c < 5; c++) {
+    var result = '';
+    for (var d = 5 - 1; d > c; d--) {
+        result += spacer;
+    }
+    for (var e = 0; e <= c; e++) {
+        result += stars + spacer;
+    }
+    console.log(result);
+}
 
+// c)
+let stars = '*';
+let spacer = ' ';
+for (var c = 0; c < 5; c++) {
+    var result = '';
+    for (var d = 5 - 1; d > c; d--) {
+        result += spacer;
+    }
+    for (var e = 0; e <= c; e++) {
+        result += stars;
+        result += (e < c) ? stars : '';
+    }
+    console.log(result);
+}
 
+// d)
+let stars = '*';
+let spacer = ' ';
+for (var f = 0; f < 11; f++) {
+    var result = '';
+    for (var g = 0; g < 5; g++) {
+        if (f < 5) {
+            result += g <= f ? stars : g;
+        } else if (f > 5) {
+            result = (g < f-6 ? (g-4)*-1 : stars) + result;
+        } else {
+            result = "-----";
+        }
+    }
+    console.log(result);
+}
+
+// e)
+let stars = '*';
+let spacer = ' ';
+for (var c = 0; c < 8; c++) {
+    var result = '';
+    for (var d = 4; d > c; d--) {
+        result += spacer;
+    }
+    for (var e = 0; e <= c; e++) {
+        result += stars + spacer;
+    }
+    if(c>=5) {
+        result = '';
+        for (var f = 0; f < 4; f++) {
+          result += spacer;
+        }
+        result += stars;
+    }
+  
+    console.log(result);
+}
 
